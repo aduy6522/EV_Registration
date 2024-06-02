@@ -31,8 +31,21 @@ describe('Signup Page Test', function() {
           cy.log('Signup successful');
           
           // Find the sign-out element using XPath and click on it
-          cy.wait(2000);
-          cy.contains('Đăng xuất').click({ force: true });
+          cy.wait(4000);
+          cy.contains('Bài test').click({ force: true });
+          cy.contains('Tính cách DISC').click({ force: true });  
+          cy.contains('Làm ngay').click();
+          cy.get('img[alt="close"][src="/_next/static/media/black-close.4683de0c.svg"]').click();
+
+          cy.wait(10000);
+
+          // Loop to click different ratios 48 times, 2 milliseconds apart
+          for (let i = 0; i < 48; i++) {
+            const randomIndex = Cypress._.random(0, 1);
+            const groupElements = cy.get('.group-question__type-item');
+            groupElements.eq(randomIndex).click();
+            cy.wait(2);
+          }
         }
       });
     });
