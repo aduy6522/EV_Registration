@@ -1,4 +1,3 @@
-```markdown
 # DISC Personality Test Automation
 
 ## Overview
