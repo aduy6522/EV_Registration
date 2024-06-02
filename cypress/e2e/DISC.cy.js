@@ -38,7 +38,7 @@ describe('Signup Page Test', function() {
           cy.get('img[alt="close"][src="/_next/static/media/black-close.4683de0c.svg"]').click();
 
           cy.wait(10000);
-
+          cy.contains('Đăng xuất').click({ force: true });
           // Loop to click different ratios 48 times, 2 milliseconds apart
           for (let i = 0; i < 48; i++) {
             const randomIndex = Cypress._.random(0, 1);
