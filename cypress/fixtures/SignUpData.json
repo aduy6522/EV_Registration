@@ -1,20 +1,5 @@
 [
   {
-    "fullname": "Ava Walker",
-    "email": "ava.walker@example.com",
-    "password": "Walker456@"
-  },
-  {
-    "fullname": "James Wright",
-    "email": "james.wright@example.com",
-    "password": "Wright789@"
-  },
-  {
-    "fullname": "Sophia Robinson",
-    "email": "sophia.robinson@example.com",
-    "password": "Robinson123@"
-  },
-  {
     "fullname": "John Doe",
     "email": "john.doe@example.com",
     "password": "Secret123@"
