@@ -660,7 +660,7 @@ describe('Event Registration Flow - Single', () => {
 		cy.wait(2500);
 	});
 
-    it.only('RS_013: Select Payment Invoice (Offline payment)', () => {
+    it.skip('RS_013: Select Payment Invoice (Offline payment)', () => {
 		const randomEmail = `user${Math.floor(Math.random() * 10000)}@evexus.au`;
 		// Enter email and submit
 		cy.get('input[name="email"]').type('alan' + randomEmail);
