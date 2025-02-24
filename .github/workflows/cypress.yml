@@ -23,7 +23,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install cypress@13.0
 
       - name: Run Cypress tests
         run: npx cypress run --browser chrome
