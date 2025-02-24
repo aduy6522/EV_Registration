@@ -3,7 +3,7 @@ describe('Event Registration Flow - Single', () => {
 		// Mở trang web hoặc form mà bạn muốn kiểm tra
 		cy.visit('https://evexus-dev.com/event/example/register/246/email');
         cy.wait(6000)
-        cy.get('#rcc-confirm-button').click();
+        //cy.get('#rcc-confirm-button').click();
 	});
 
 	it('RS_001: Blank Email Field', () => {
