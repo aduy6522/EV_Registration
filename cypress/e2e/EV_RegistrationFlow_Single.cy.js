@@ -3,7 +3,7 @@ describe('Event Registration Flow - Single', () => {
 		// Mở trang web hoặc form mà bạn muốn kiểm tra
 		cy.visit('https://evexus-dev.com/event/example/register/246/email');
         cy.wait(5000)
-	cy.get('#rcc-confirm-button').click();
+        //cy.get('#rcc-confirm-button').click();
 
 	});
 
@@ -61,9 +61,9 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -87,10 +87,13 @@ describe('Event Registration Flow - Single', () => {
         cy.get('input[name="discountCodeString"]')
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
+        cy.wait(2500);
+
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -124,9 +127,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -154,9 +158,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -184,9 +189,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -225,9 +231,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -286,9 +293,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -367,9 +375,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -468,9 +477,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -546,9 +556,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -608,9 +619,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -676,9 +688,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -797,9 +810,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -873,9 +887,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -953,9 +968,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -1036,9 +1052,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -1122,9 +1139,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -1211,9 +1229,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -1300,9 +1319,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -1407,9 +1427,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
@@ -1532,9 +1553,10 @@ describe('Event Registration Flow - Single', () => {
             .should('be.empty')  // Kiểm tra rằng trường input ban đầu là trống
             .type('EARLYBIRD2024');
         //  Checkboxes
-        cy.get('.chakra-checkbox__control.css-17o6u7m').each(($checkbox) => {
-                cy.wrap($checkbox).click();
-            });
+        cy.wait(2500);
+        cy.get(':nth-child(1) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+        cy.get(':nth-child(2) > [data-testid="ui-vstack"] > [data-testid="ui-hstack"] > .chakra-checkbox > .chakra-checkbox__control').click();
+
 		// Click next button
         cy.wait(2500);
 		cy.get('button').contains('Next').click();
