@@ -2,8 +2,14 @@ describe('Event Registration Flow - Single', () => {
 	beforeEach(() => {
 		// Mở trang web hoặc form mà bạn muốn kiểm tra
 		cy.visit('https://evexus-dev.com/event/example/register/246/email');
-        cy.wait(6000)
-        //cy.get('#rcc-confirm-button').click();
+        cy.wait(5000)
+	cy.get('#rcc-confirm-button', { timeout: 5000 })
+	  .should('exist')
+	  .click()
+	  .catch(() => {
+	    cy.log('Button does not exist, skip this step');
+  });
+
 	});
 
 	it('RS_001: Blank Email Field', () => {
